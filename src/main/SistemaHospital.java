@@ -1,7 +1,7 @@
-package ar.edu.cs.ed;
+package main;
 
 import java.time.LocalDate;
-
+import ar.edu.cs.ed.*;
 import ar.edu.uns.cs.ed.tdas.excepciones.MedicoException;
 import ar.edu.uns.cs.ed.tdas.excepciones.PacientesException;
 import ar.edu.uns.cs.ed.tdas.tdalista.PositionList;
