@@ -25,7 +25,7 @@ import static org.junit.Assert.*;
 @RunWith(JUnit4.class)
 public class HospitalTest {
 
-    private Hospital2 hospital;
+    private Hospital hospital;
     private Medico medicoCardiologia;
     private Medico medicoNeurologia;
     private Medico medicoTraumatologia;
@@ -40,7 +40,7 @@ public class HospitalTest {
 
     @Before
     public void setUp() {
-        hospital = new Hospital2();
+        hospital = new Hospital();
 
         // Crear médicos de prueba como objetos reales
         medicoCardiologia = new Medico("Dr. Pérez", Especialidad.CARDIOLOGIA);
@@ -66,7 +66,7 @@ public class HospitalTest {
 
     @Test
     public void testConstructorInicializaCorrectamente() {
-        Hospital2 nuevoHospital = new Hospital2();
+        Hospital nuevoHospital = new Hospital();
         assertNotNull("El hospital no debe ser null", nuevoHospital);
 
         try {
@@ -79,7 +79,7 @@ public class HospitalTest {
 
     @Test
     public void testConstructorInicializaColasParaTodasLasEspecialidades() {
-        Hospital2 nuevoHospital = new Hospital2();
+        Hospital nuevoHospital = new Hospital();
 
         for (Especialidad esp : Especialidad.values()) {
             Paciente pacientePrueba = new Paciente("Paciente de " + esp, 11111111, LocalDate.of(2000, 1, 1), esp);
